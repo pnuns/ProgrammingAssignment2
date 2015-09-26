@@ -1,9 +1,13 @@
+## This is ProgrammingAssignment2 for the Coursera R Programming course.
+## Author: Paul N.
+
 ## These functions create a matrix object with the ability to cache its inverse 
 ## and also computes the inverse if it does not exist already.
 
 ## This function creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
+  ## Initialize everything and create getters and setters
   i <- NULL
   set <- function(y) {
     x <<- y
